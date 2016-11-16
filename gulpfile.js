@@ -70,7 +70,7 @@ function() {
 		revSuffix:'',
 		paramPattern:"([\?|&][^'\"]*)?"
     })) //执行文件内引用名的替换
-	.pipe(utf8bom()) //添加utf8 bom编码，避免中文乱码
+    .pipe(utf8bom()) //添加utf8 bom编码，避免中文乱码
     .pipe(gulp.dest(config.src + config.page)); //替换后的文件输出的目录
 });
 
