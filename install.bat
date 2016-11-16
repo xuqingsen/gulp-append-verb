@@ -8,7 +8,7 @@ ECHO ---------------------------------------------
 ECHO 2. 安装gulp工具及插件，约3分钟，请保持网络畅通
 ECHO ---------------------------------------------
 call npm install --global gulp
-call npm install gulp gulp-clean gulp-rev gulp-rev-collector gulp-sequence --save-dev
+call npm install gulp gulp-clean gulp-rev gulp-rev-collector gulp-sequence gulp-bom --save-dev
 ECHO ---------------------------------------------
 ECHO Finish
 ECHO ---------------------------------------------

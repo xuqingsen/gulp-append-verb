@@ -39,6 +39,7 @@ var config = {
 var gulp = require('gulp');
 var clean = require('gulp-clean'); //清除文件
 var rev = require('gulp-rev'); //对文件名加MD5后缀
+var utf8bom = require('gulp-bom');
 var revCollector = require('gulp-rev-collector'); //路径替换
 var gulpSequence = require('gulp-sequence');	//任务串行		
 
@@ -69,6 +70,7 @@ function() {
 		revSuffix:'',
 		paramPattern:"([\?|&][^'\"]*)?"
     })) //执行文件内引用名的替换
+	.pipe(utf8bom()) //添加utf8 bom编码，避免中文乱码
     .pipe(gulp.dest(config.src + config.page)); //替换后的文件输出的目录
 });
 
