@@ -90,14 +90,16 @@ function() {
 	}
 	return exec;
 });
-gulp.task('copyResource',function(){
-	var files=revCollector.getResource();
-	if(files.length>0){
-	return gulp.src(files,{base:config.src})
-		.pipe(utf8bom())
-	.pipe(gulp.dest(config.update));}
-	else
-		return null;
+gulp.task('copyResource', function () {
+    if (config.update) {
+        var files = revCollector.getResource();
+        if (files.length > 0) {
+            return gulp.src(files, { base: config.src })
+                .pipe(utf8bom())
+                .pipe(gulp.dest(config.update));
+        }          
+    }
+    return null;
 });
 
 //任务序列
