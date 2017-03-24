@@ -31,8 +31,8 @@
 */
 
 var projects={
-    mgk: { update: 'C:\\Codes\\webform\\mgk\\update\\', src: 'C:\\Codes\\webform\\mgk\\frontpage\\', excludes: ["!C:\\Codes\\webform\\mgk\\frontpage\\xtest\\**"] },
-	jubaopen:{update:'C:\\Codes\\webform\\聚宝盆\\update\\',src:'C:\\Codes\\webform\\聚宝盆\\front\\'}
+    mgk: { update: 'C:\\Codes\\mgk\\update\\', src: 'C:\\Codes\\mgk\\frontpage\\', excludes: ["!C:\\Codes\\mgk\\frontpage\\xtest\\**"] },
+	jubaopen:{update:'C:\\Codes\\jubaopen\\update\\',src:'C:\\Codes\\jubaopen\\front\\'}
 };
 
 var config = {
